@@ -1,0 +1,696 @@
+body {
+    margin: 0;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+p {
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #F5EA56;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input+label:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+label{
+    vertical-align: middle
+}
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.banner {
+    position: relative;
+}
+
+.text-banner {
+    position: absolute;
+    top: calc(50% + 3vw);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image__banner {
+    line-height: 0;
+}
+
+.image__banner img {
+    width: 100%;
+}
+
+.logo {
+    color: #F5EA56;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1vw;
+}
+
+.phone {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.phone:before,
+.phone:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+}
+
+.phone:before {
+    margin-left: -100%;
+    left: -25px;
+}
+
+.phone:after {
+    margin-right: -100%;
+    right: -25px;
+}
+
+.info {
+    display: grid;
+    row-gap: 24px;
+}
+
+.info p {
+    text-align: center;
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.time-work {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 600;
+    color: #F5EA56;
+}
+
+.btn {
+    border-radius: 17px;
+    border: none;
+    background-color: #F5EA56;
+    color: #000;
+    font-size: 34px;
+    font-family: "Golos Text", sans-serif;
+}
+
+.btn__baner {
+    margin: 0 auto;
+    font-weight: 400;
+    padding: 24px 72px;
+    margin-top: 2vw;
+}
+
+.btn-call {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    bottom: 4vw;
+    right: 5vw;
+}
+
+.btn-call-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.btn-call-img img {
+    width: 45%;
+    margin: auto;
+}
+
+.content {
+    background: linear-gradient(180.00deg, rgb(38, 37, 38) -24.465%, rgb(0, 0, 0) 100%);
+    padding: 0 124px;
+}
+
+.advantages {
+    padding: 96px 0;
+    justify-content: space-between;
+    justify-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 29%);
+}
+
+.card__advantages {
+    color: #fff;
+    text-align: center;
+}
+
+.card__advantages img {
+    width: 56px;
+    height: 56px;
+}
+
+.title__advantages {
+    font-weight: 500;
+    margin: 24px 0 16px 0;
+}
+
+.discription__advantages {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.block-order {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.map {
+    width: 50%;
+}
+
+.map img {
+    border-radius: 17px;
+    width: 100%;
+}
+
+.footer {
+    padding: 96px 124px 96px 124px;
+    background-color: #000;
+}
+
+.line {
+    margin: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-info {
+    margin-top: 96px;
+    color: #fff;
+    display: flex;
+}
+
+.contact {
+    display: grid;
+    row-gap: 12px;
+    width: 25%;
+}
+
+.title__footer {
+    margin-bottom: 24px;
+}
+
+.item__contact {
+    display: flex;
+}
+
+.item__contact_phone {
+    height: 15px;
+}
+
+.item__contact img {
+    width: 9px;
+    height: 15px;
+    margin: auto 6px auto 0;
+
+}
+
+.item__contact p {
+    font-size: 12px;
+    align-items: center;
+}
+
+.logo__footer {
+    margin: auto;
+    width: 50%;
+}
+
+.additional-information {
+    row-gap: 12px;
+    display: grid;
+    width: 25%;
+}
+
+.item__additional {
+    font-size: 12px;
+}
+
+.text-select {
+    color: #F5EA56;
+    text-decoration: underline;
+}
+
+.social {
+    display: grid;
+    column-gap: 13px;
+    grid-template-columns: repeat(3, 32px);
+}
+
+.item__social {
+    width: 32px;
+    margin: auto 0;
+    line-height: 0;
+}
+
+.item__social img {
+    width: 100%;
+}
+
+/*map*/
+#map {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.block-form {
+    width: 40%;
+    margin: auto 0;
+}
+
+.form {
+    color: #fff;
+}
+
+.form div {
+    margin-bottom: 12px;
+}
+
+.form div>div:not(.moto-transport,.auto-transport) {
+    display: inline-block;
+}
+
+.moto-transport,
+.auto-transport {
+    display: block;
+}
+
+.title__form {
+    margin-bottom: 5px;
+}
+
+.form label {
+    font-size: 12px;
+}
+
+.form input {
+    vertical-align: middle;
+}
+
+.btn__form {
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 7px;
+    margin-top: 12px;
+}
+
+@media(max-width: 1280px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .phone {
+        font-size: 9px;
+    }
+
+    .info p {
+        font-size: 21px;
+    }
+
+    .btn__baner {
+        padding: 10px 37px;
+        margin-top: 1vw;
+        font-size: 19px;
+        border-radius: 8px;
+    }
+
+    .btn-call {
+        width: 47px;
+        height: 47px;
+    }
+
+    .content {
+        padding: 0 72px;
+    }
+
+    .title__advantages {
+        font-size: 15px;
+        margin: 11px 0 10px 0;
+    }
+
+    .discription__advantages {
+        font-size: 9px;
+    }
+
+    .card__advantages img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .block-form {
+        width: 46%;
+        margin: auto 0;
+    }
+
+    .title__form {
+        font-size: 19px;
+    }
+
+    .footer {
+        padding: 96px 72px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .block-order {
+        display: block;
+        height: auto;
+    }
+
+    .info {
+        row-gap: 9px;
+    }
+
+    .btn__baner {
+        padding: 10px 28px;
+    }
+
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+
+    .block-form {
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .btn__form {
+        padding: 10px 19px;
+    }
+
+    .footer {
+        padding: 72px;
+    }
+
+    .footer-info {
+        margin-top: 72px;
+    }
+
+    .contact {
+        row-gap: 7px;
+    }
+
+    .additional-information {
+        row-gap: 7px;
+    }
+
+    .title__footer {
+        font-size: 16px;
+    }
+
+    .item__contact p {
+        font-size: 10px;
+    }
+
+    .item__additional {
+        font-size: 10px;
+    }
+
+    .social {
+        column-gap: 8px;
+    }
+
+    .title__footer {
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        margin-top: 20px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .phone {
+        font-size: 7px;
+    }
+
+    .phone:before,
+    .phone:after {
+        height: 1px;
+    }
+
+    .info {
+        row-gap: 6px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .btn__baner {
+        padding: 7px 14px;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    .content {
+        padding: 24px 72px 0 72px;
+    }
+
+    #map {
+        height: 321px;
+    }
+
+    .ymaps-2-1-79-route-panel-input__icon {
+        display: none;
+    }
+
+    .ymaps-2-1-79-route-panel-input__input {
+        border: none !important;
+        font-size: 11px !important;
+        height: 21px !important;
+    }
+
+    .ymaps-2-1-79-route-panel__switch {
+        display: none !important;
+    }
+
+    .ymaps-2-1-79-route-panel__inputs {
+        padding: 10px !important;
+    }
+
+    .ymaps-2-1-79-route-panel__input_from {
+        margin-bottom: 8px !important;
+    }
+
+    .ymaps-2-1-79-control-popup__icon {
+        display: none !important;
+    }
+
+    .ymaps-2-1-79-control-popup__header {
+        line-height: 15px !important;
+    }
+
+    .ymaps-2-1-79-control-popup__title {
+        font-size: 11px !important;
+    }
+
+    .ymaps-2-1-79-control-popup {
+        width: 163px !important;
+        min-width: 140px !important;
+
+    }
+
+    .ymaps-2-1-79-zoom {
+        display: none !important;
+    }
+
+    .title__form {
+        font-size: 13px;
+    }
+
+    .form label {
+        font-size: 10px;
+    }
+
+    .form input {
+        transform: scale(0.8)
+    }
+
+    .btn__form {
+        font-size: 12px;
+        padding: 7px 13px;
+    }
+
+    .footer {
+        padding: 61px 72px;
+
+    }
+
+    .footer-info {
+        margin-top: 61px;
+    }
+
+    .title__footer {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .item__contact p {
+        font-size: 8px;
+    }
+
+    .contact {
+        row-gap: 0px;
+    }
+
+    .item__additional {
+        font-size: 8px;
+    }
+
+    .logo__footer {
+        width: 40%;
+    }
+
+    .contact {
+        width: 30%;
+    }
+
+    .additional-information {
+        width: 30%;
+    }
+
+    .social {
+        grid-template-columns: repeat(3, 17px);
+    }
+
+    .item__social {
+        width: 17px;
+    }
+
+    .btn-call {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(max-width: 446px) {
+    .info p {
+        font-size: 9px;
+    }
+
+    .btn__baner {
+        padding: 5px 10px;
+        font-size: 9px;
+        border-radius: 4px;
+    }
+
+    .phone {
+        font-size: 6px;
+    }
+
+    .btn__form {
+        font-size: 10px;
+        padding: 7px 13px;
+    }
+
+    .content {
+        padding: 24px 48px;
+    }
+
+    .footer {
+        padding: 24px 48px;
+    }
+
+    .footer-info {
+        margin-top: 24px;
+    }
+
+}
+
+@media(max-width: 401px) {
+    .footer-info {
+        justify-content: space-between;
+    }
+
+    .logo__footer {
+        display: none;
+    }
+
+    .contact {
+        width: 40%;
+    }
+
+    .additional-information {
+        width: 40%;
+    }
+
+    #map {
+        height: 277px;
+    }
+}
+
+@media(hover:hover) {
+    .btn:hover {
+        background-color: #fff466;
+    }
+
+}
+
+@media(hover:none) {
+    .btn:active {
+        background-color: #efe33f;
+    }
+}

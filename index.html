@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evacuator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="logo">
+                ЭВАКУАТОР
+            </div>
+            <p class="phone">tel:8(996)-521-65-48</p>
+        </header>
+        <div class="conteiner">
+            <div class="banner">
+                <a href="tel:89044919307">
+                    <div class="btn btn-call">
+                        <div class="btn-call-img">
+                            <img src="icons/phone1.svg" alt="phone">
+                        </div>
+                    </div>
+                </a>
+                <div class="image__banner">
+                    <img src="img/Сочетание 11.png" alt="">
+                </div>
+                <div class="text-banner">
+                    <div class="info">
+                        <p>ЭВАКУАТОР В ТЮМЕНИ</p>
+                        <p>Предоставляем услуги по всей области</p>
+                        <p><span class="time-work">24/7</span></p>
+                        <button class="btn btn__baner" onclick="location.href='#order'">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="advantages">
+                    <div class="card__advantages">
+                        <img src="icons/calendar.svg" alt="calendar">
+                        <p class="title__advantages">Круглосуточно</p>
+                        <p class="discription__advantages"> Компания работает без выходных. Принимам заявки на
+                            транспортировку круглосуточно.</p>
+                    </div>
+                    <div class="card__advantages">
+                        <img src="icons/clock.svg" alt="clock">
+                        <p class="title__advantages">Быстро</p>
+                        <p class="discription__advantages"> Подадим эвакуатор для транспортных средств (мотоциклов,
+                            легковых авто, микроавтобусов) весом до 5 тонн. Время прибытия от 15 минут</p>
+                    </div>
+                    <div class="card__advantages">
+                        <img src="icons/safe.svg" alt="safe">
+                        <p class="title__advantages">Безапасно</p>
+                        <p class="discription__advantages"> Опытные водители оперативно погрузят автомобиль без поломок
+                            с любой грузоподъемностью. После доставки авто предоставляют документы.</p>
+                    </div>
+                </div>
+                <div class="block-order">
+                    <div id="map"></div>
+                    <div class="block-form" id="order">
+                        <form class="form" method="get">
+                            <div>
+                                <p class="title__form">Какой эвакуатор вам нужен</p>
+                                <div class="manipulator">
+                                    <input type="radio" id="manipulator" name="Evacuator" value="manipulator" />
+                                    <label for="manipulator">манупулятор с траверсой</label>
+                                </div>
+                                <div class="motoevacuator">
+                                    <input type="radio" id="Evacuator" name="Evacuator" value="Evacuator" />
+                                    <label for="Evacuator">мотоэвакуатор</label>
+                                </div>
+                                <div class="cargo">
+                                    <input type="radio" id="cargo" name="Evacuator" value="cargo" />
+                                    <label for="cargo">грузовой</label>
+                                </div>
+                            </div>
+                            <div class="select-transport">
+                                <p class="title__form">Вид перевозимого трансорта</p>
+                                <div class="auto-transport">
+                                    <input type="radio" id="sedan" name="transport" value="sedan" />
+                                    <label for="sedan">седан</label>
+                                    <input type="radio" id="crossover" name="transport" value="crossover" />
+                                    <label for="crossover">кроссовер</label>
+                                    <input type="radio" id="jeep" name="transport" value="jeep" />
+                                    <label for="jeep">джип</label>
+                                </div>
+                                <div class="moto-transport">
+                                    <input type="radio" id="motorcycle" name="mototransport" value="motorcycle" />
+                                    <label for="motorcycle">мотоцикл</label>
+                                    <input type="radio" id="quadbike" name="mototransport" value="quadbike" />
+                                    <label for="quadbike">квадроцикл</label>
+                                    <input type="radio" id="snowmobile" name="mototransport" value="snowmobile" />
+                                    <label for="snowmobile">снегоход</label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p class="title__form">Заблокированны ли колеса</p>
+                                <input type="radio" id="block-yes" name="block" value="yes" />
+                                <label for="block-yes">да</label>
+                                <input type="radio" id="block-no" name="block" value="no" />
+                                <label for="block-no">нет</label>
+                            </div>
+                            <div>
+                                <p class="title__form">Где находится трансопорт?</p>
+                                <input type="radio" id="street" name="geo" value="street" />
+                                <label for="street">улица</label>
+                                <input type="radio" id="garage" name="geo" value="garage" />
+                                <label for="garage">гараж</label>
+                                <input type="radio" id="parking" name="geo" value="parking" />
+                                <label for="parking">паркинг</label>
+                            </div>
+                            <button type="submit" class="btn btn__form">Заказать</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <footer class="footer">
+            <hr class="line">
+            <div class="footer-info">
+                <div class="contact">
+                    <p class="title__footer">Контакты</p>
+                    <div class="item__contact item__contact_phone">
+                        <img src="icons/phone2.svg" alt="phone">
+                        <p>8(922)072-96-00</p>
+                    </div>
+                    <div class="item__contact">
+                        <img src="icons/geo.svg" alt="geoposition">
+                        <p>123543, Тюмень
+                            ул. Энергетиков 21</p>
+                    </div>
+                    <div class="item__contact">
+                        <img src="icons/mail.svg" alt="mail">
+                        <p>info@evakuatork.ru </p>
+                    </div>
+                </div>
+                <div class="logo logo__footer">
+                    ЭВАКУАТОР
+                </div>
+                <div class="additional-information">
+                    <p class="title__footer">Дополнительно</p>
+                    <a href="#">
+                        <p class="item__additional">Для ознакомления с подробной информацией намите <span
+                                class="text-select">сюда</span> </p>
+                    </a>
+                    <div class="social">
+                        <a href="tg://resolve?domain=имя">
+                            <div class="item__social"> <img src="icons/telegram.svg" alt="telegram"></div>
+                        </a>
+                        <a href="https://wa.me/89044919307">
+                            <div class="item__social"> <img src="icons/whatsapp.svg" alt="whatsapp"></div>
+                        </a>
+                        <a href="viber://add?number=89044919307">
+                            <div class="item__social"> <img src="icons/viber.svg" alt="viber"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=528f4aeb-2b07-483f-87ba-fefe4abf90a1"
+        type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
