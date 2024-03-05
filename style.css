@@ -339,6 +339,8 @@ label{
 
 .form input {
     vertical-align: middle;
+    width: 15px;
+    height: 15px;
 }
 
 .btn__form {
