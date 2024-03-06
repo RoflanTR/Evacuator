@@ -495,7 +495,7 @@ label{
     }
 
     .info p {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .btn__baner {
@@ -630,10 +630,15 @@ label{
 }
 
 @media(max-width: 446px) {
-    .info p {
-        font-size: 9px;
+    .info{
+        row-gap: 1px;
     }
-
+    .info p {
+        font-size: 15px;
+    }
+    .time-work{
+        display: none;
+    }
     .btn__baner {
         padding: 5px 10px;
         font-size: 9px;
@@ -684,7 +689,14 @@ label{
         height: 277px;
     }
 }
-
+@media(max-width: 375px) {
+    .header {
+        margin-top: 7px;
+    }
+    .info p {
+        font-size: 13px;
+    }
+}
 @media(hover:hover) {
     .btn:hover {
         background-color: #fff466;
