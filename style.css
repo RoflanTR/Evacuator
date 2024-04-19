@@ -153,8 +153,8 @@ label{
     width: 64px;
     height: 64px;
     position: fixed;
-    bottom: 4vw;
-    right: 5vw;
+    bottom: 20px;
+    right: 20px;
 }
 
 .btn-call-img {
@@ -203,7 +203,7 @@ label{
 
 .block-order {
     display: flex;
-    height: 400px;
+    height: 494px;
     justify-content: space-between;
 }
 
@@ -347,9 +347,25 @@ label{
     font-size: 14px;
     padding: 12px 24px;
     border-radius: 7px;
-    margin-top: 12px;
 }
-
+.phone-form{
+    width: 100%!important;
+}
+.footer__form{
+    display: flex;
+    align-items: center;
+}
+.price{
+    margin-left: 1vw;
+    font-size: 15px;
+    display: none;
+}
+.price span{
+    color: #efe33f;
+}
+.price_count{
+    font-size: 17px;
+}
 @media(max-width: 1280px) {
     .logo {
         font-size: 18px;
@@ -446,7 +462,9 @@ label{
     .contact {
         row-gap: 7px;
     }
-
+    .content {
+        padding: 0 72px 2px 72px;
+    }
     .additional-information {
         row-gap: 7px;
     }
@@ -469,6 +487,9 @@ label{
 
     .title__footer {
         margin-bottom: 12px;
+    }
+    .price{
+        margin-left: 4vw;
     }
 }
 
@@ -509,7 +530,7 @@ label{
     }
 
     .content {
-        padding: 24px 72px 0 72px;
+        padding: 24px 72px 2px 72px;
     }
 
     #map {
@@ -655,7 +676,7 @@ label{
     }
 
     .content {
-        padding: 24px 48px;
+        padding: 24px 48px 2px 48px;
     }
 
     .footer {
@@ -665,7 +686,12 @@ label{
     .footer-info {
         margin-top: 24px;
     }
-
+    .price {
+        font-size: 10px;
+    }
+    .price_count {
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 401px) {

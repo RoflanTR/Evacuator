@@ -73,55 +73,77 @@
                             <div>
                                 <p class="title__form">Какой эвакуатор вам нужен</p>
                                 <div class="manipulator">
-                                    <input type="radio" id="manipulator" name="Evacuator" value="manipulator" />
+                                    <input type="radio" id="manipulator" name="Evacuator" value="manipulator"
+                                        required />
                                     <label for="manipulator">манупулятор с траверсой</label>
                                 </div>
                                 <div class="motoevacuator">
-                                    <input type="radio" id="Evacuator" name="Evacuator" value="Evacuator" />
+                                    <input type="radio" id="Evacuator" name="Evacuator" value="Evacuator" required />
                                     <label for="Evacuator">мотоэвакуатор</label>
                                 </div>
                                 <div class="cargo">
-                                    <input type="radio" id="cargo" name="Evacuator" value="cargo" />
+                                    <input type="radio" id="cargo" name="Evacuator" value="cargo" required />
                                     <label for="cargo">грузовой</label>
                                 </div>
                             </div>
                             <div class="select-transport">
                                 <p class="title__form">Вид перевозимого трансорта</p>
                                 <div class="auto-transport">
-                                    <input type="radio" id="sedan" name="transport" value="sedan" />
+                                    <input type="radio" id="sedan" name="transport" value="sedan" required />
                                     <label for="sedan">седан</label>
-                                    <input type="radio" id="crossover" name="transport" value="crossover" />
+                                    <input type="radio" id="crossover" name="transport" value="crossover" required />
                                     <label for="crossover">кроссовер</label>
-                                    <input type="radio" id="jeep" name="transport" value="jeep" />
+                                    <input type="radio" id="jeep" name="transport" value="jeep" required />
                                     <label for="jeep">джип</label>
                                 </div>
                                 <div class="moto-transport">
-                                    <input type="radio" id="motorcycle" name="transport" value="motorcycle" />
+                                    <input type="radio" id="motorcycle" name="transport" value="motorcycle" required />
                                     <label for="motorcycle">мотоцикл</label>
-                                    <input type="radio" id="quadbike" name="transport" value="quadbike" />
+                                    <input type="radio" id="quadbike" name="transport" value="quadbike" required />
                                     <label for="quadbike">квадроцикл</label>
-                                    <input type="radio" id="snowmobile" name="transport" value="snowmobile" />
+                                    <input type="radio" id="snowmobile" name="transport" value="snowmobile" required />
                                     <label for="snowmobile">снегоход</label>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <p class="title__form">Заблокированны ли колеса</p>
-                                <input type="radio" id="block-yes" name="block" value="yes" />
-                                <label for="block-yes">да</label>
-                                <input type="radio" id="block-no" name="block" value="no" />
-                                <label for="block-no">нет</label>
+                                <div class="block_yes">
+                                    <input type="radio" id="block-yes" name="block" value="yes" required />
+                                    <label for="block-yes">да</label>
+                                </div>
+                                <div class="block_no">
+                                    <input type="radio" id="block-no" name="block" value="no" required />
+                                    <label for="block-no">нет</label>
+                                </div>
                             </div>
                             <div>
                                 <p class="title__form">Где находится трансопорт?</p>
-                                <input type="radio" id="street" name="geo" value="street" />
-                                <label for="street">улица</label>
-                                <input type="radio" id="garage" name="geo" value="garage" />
-                                <label for="garage">гараж</label>
-                                <input type="radio" id="parking" name="geo" value="parking" />
-                                <label for="parking">паркинг</label>
+                                <div class="street">
+                                    <input type="radio" id="street" name="geo" value="street" required />
+                                    <label for="street">улица</label>
+                                </div>
+                                <div class="garage">
+                                    <input type="radio" id="garage" name="geo" value="garage" required />
+                                    <label for="garage">гараж</label>
+                                </div>
+                                <div class="parking">
+                                    <input type="radio" id="parking" name="geo" value="parking" required />
+                                    <label for="parking">паркинг</label>
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn__form">Заказать</button>
+                            <div>
+                                <div>
+                                    <p class="title__form">Ваш номер телефона:</p>
+                                    <input class="phone-form" type="tel" id="phone" name="phone" value="" minlength="11"
+                                        maxlength="11" required />
+                                </div>
+                            </div>
+                            <div class="footer__form">
+                                <button type="submit" class="btn btn__form">Заказать</button>
+                                <p class="price">Примерная цена: <span class="price_color">от <span
+                                            class="price_count">550</span> ₽</span></p>
+                            </div>
                     </div>
                     </form>
                 </div>
